@@ -1,0 +1,42 @@
+<script>
+
+let posicao = 4
+
+ let chao = "_"
+ let personagem = "X"
+ let tamanho_mundo =10
+    document.addEventListener("keyup",(e)=>
+    {
+// console.log("Voce apertou a tecla "+e.key)
+    if(e.key == "ArrowRight")
+    {
+        posicao++
+    }
+    else if(e.key == "ArrowLeft")
+    {
+        posicao--
+    }
+    
+    console.clear()
+    desenhar()
+   
+
+ })
+function desenhar()
+{
+     let mapa = ""
+        
+    for(let i = 0;i < tamanho_mundo;i++)
+    {
+        if( i == posicao){
+        mapa += personagem
+    }
+    else
+    {
+         mapa += chao
+    }
+    console.log(mapa)
+}
+}
+
+</script>
