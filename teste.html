@@ -1,9 +1,11 @@
 <script>
 
 let posicao = 4
+let posicaoMoeda = 5
 
  let chao = "_"
  let personagem = "X"
+ let moeda = "o"
  let tamanho_mundo =10
     document.addEventListener("keyup",(e)=>
     {
@@ -30,8 +32,17 @@ function desenhar()
     {
         if( i == posicao){
         mapa += personagem
+        
     }
-    else
+    else if(i == posicaoMoeda){
+        mapa += moeda
+    
+    }
+    else if(posicao == posicaoMoeda){
+        moeda =chao
+    }
+    
+    else 
     {
          mapa += chao
     }
