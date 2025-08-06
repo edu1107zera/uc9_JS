@@ -43,13 +43,16 @@ function main(){
     let opcao = prompt("Digite 1 para cadastrar, 2 para listar, 3 para buscar: ")
     if(opcao == "1"){
        
-            let name = prompt("Digite um nome: ")
-            nomes.push({name})
-            
+            let nome = prompt("Digite um nome: ")
+            let idade = prompt("Digite uma idade: ")
+            let id = nomes.length+1
+            nomes.push({id: id,nome: nome,idade: idade})
             main()
         
         
-       
+            
+
+            
         
     }else if( opcao == "2" ){
 
