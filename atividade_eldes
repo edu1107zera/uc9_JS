@@ -1,0 +1,55 @@
+let prompt = require("prompt-sync")()
+
+//nome_idade()
+//par_impar()
+//exibir_numeros()
+//soma_arry()
+objeto()
+function nome_idade(){
+
+    console.log("-------------------------")
+    let nome = prompt("Digite seu nome: ")
+    let idade = prompt("Digite sua idade: ")
+    console.log(`Ola,${nome}! Voce tem ${idade} anos.`)
+    
+}
+function par_impar(){
+    let numero = parseInt(prompt("Digite um numero:"))
+    let calculo = numero %2
+    if(calculo  == 0){
+        console.log("-------------------------------")
+        console.log(`| O numero ${numero} é [par]!       |`)
+        console.log("-------------------------------")
+    }else{
+        console.log("-------------------------------")
+        console.log(`| O numero ${numero} é [impar]!     |`)
+        console.log("-------------------------------")
+
+    }
+
+}
+function exibir_numeros(){
+    
+    for (let i = 0; i < 11; i++) {
+        console.log(i)
+    }
+}
+function soma_arry(){
+    let valores =[5,8,12]
+    let soma = 0
+
+    for (let i = 0; i < valores.length; i++) {
+    soma = soma + valores[i]
+        
+    }
+    console.log(soma)
+}
+function objeto(){
+
+    let aluno = {
+        nome: "Eduardo",
+        idade: "18",
+        curso:"Engenharia"  
+    }
+    console.log(`Nome: ${aluno.nome} |  Curso: ${aluno.curso}`)
+}

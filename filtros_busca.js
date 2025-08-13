@@ -32,6 +32,11 @@ let nomes =
             id: 6,
             nome: "Bruxa do 71",
             idade: 300
+        },
+        {
+            id: 7,
+            nome: "Pópis",
+            idade: 16
         }
     ]
 
@@ -75,10 +80,14 @@ function main() {
         }
     }
     else if (opcao == "3") {
-        let letras = prompt("Digite as letras do nome que quer filtrar:")
-        for (let i = 0; i < nomes.length; i++) {
 
-            if (nomes[i].nome.toUpperCase().includes(letras.toUpperCase())) {
+        for (let i = 0; i < nomes.length; i++) {
+            let letras = prompt("Digite as letras do nome que quer filtrar:")
+            let aux = nomes[i].nome
+            aux =aux.toUpperCase()
+            aux =aux.replaceAll("ó","o")
+
+            if (aux.includes(letras.toUpperCase())) {
                 console.log(`id:${nomes[i].id} | Nomes:${nomes[i].nome} | Idade: ${nomes[i].idade}`)
             }
 

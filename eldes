@@ -1,0 +1,31 @@
+
+/*
+const numero = [2,10,11,21];
+
+function multiploscinco(l){
+
+    for (let i = 0; i < l.length; i++) {
+        if(l[i]%5 == 0){
+            return l[i]
+        }
+        
+        
+        
+
+    }
+    return "Nao possue "
+    
+}
+console.log(multiploscinco(numero))*/
+
+
+igualdez()
+function igualdez(numero){
+    if (numero == 10)
+        {
+            return true
+        }
+        else{
+            return false
+        }
+    }
